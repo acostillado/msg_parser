@@ -71,7 +71,7 @@ module tb_msg_parser ();
 		tvalid <= '1; tdata <= 64'h00000000_ffffffff; tkeep <= 8'b00001111; tlast <= '1; #(period);	
 		tvalid <= '0; tdata <= '0; tkeep <= '0; tlast <= '0; #(period);	// @ end frame
 				
-		tvalid <= '1; tdata <= 64'h62626262_00080008; tkeep <= 8'b11111111; tlast <= '0; #(period);
+	    tvalid <= '1; tdata <= 64'h045de506_000e0002; tkeep <= 8'b11111111; tlast <= '0; #(period);
 		tvalid <= '1; tdata <= 64'h03889560_84130858; tkeep <= 8'b11111111; tlast <= '0; #(period);
 		tvalid <= '1; tdata <= 64'h85468052_0008a5b0; tkeep <= 8'b11111111; tlast <= '0; #(period);
 		tvalid <= '1; tdata <= 64'h00000000_d845a30c; tkeep <= 8'b00001111; tlast <= '1; #(period);	
